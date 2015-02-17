@@ -80,4 +80,22 @@ Product.create!(title: 'Parrot Bebop Drone',
     price: 470.00
     )
 
+Product.create!(title: 'Machi Koro',
+    description:
+    %{<p>
+        Welcome to the city of Machi Koro, the Japanese card game that is sweeping the world. You've just been
+        elected Mayor. Congrats! Unfortunately the citizens have some pretty big demands: jobs, a theme park,
+        a couple of cheese factories and maybe even a radio tower.  A tough proposition since the city currently
+        consists of a wheat field, a bakery and a single die. Armed only with your trusty die and a dream, you
+        must grow Machi Koro into the largest city in the region.  You will need to collect income from
+        developments, build public works and steal from your neighbor's coffers.  Just make sure they aren't doing
+         the same to you! Machi Koro is a fast-paced light-hearted game for you and up to 3 friends.
+         Once you've had a taste of Machi Koro, this infectiously fun game may have you wondering if the dinner
+         table ever served another purpose. They say you can't build Rome in a day, but Machi Koro will be built in
+         less than 30 minutes!
+        </p>},
+    image_url: 'machi_koro.jpg',
+    price: 22.00
+    )
+
 
