@@ -1,0 +1,79 @@
+// Place all the styles related to the Products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$font-stack: Helvetica, sans-serif;
+$headliner-color: DeepPink;
+$primary-color: #bebcc0;
+$secondary-color: #b8497f;
+$terciary-color: #4f4887;
+
+.products {
+    h1, h2, h3, h4 {
+        color: $headliner-color;
+    }
+
+    table {
+        border-collapse:  collapse;
+        font: $font-stack;
+        color: #fff;
+    }
+
+    table tr td {
+        padding: 15px;
+        vertical-align: top;
+    }
+
+    .list_image {
+        max-width: 100px;
+    }
+
+    .list_description {
+        width: 60%;
+
+        dl {
+            margin: 0;
+        }
+
+        dt {
+            color: #fff;
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        dd {
+            margin: 0;
+        }
+    }
+
+    .list_actions {
+        font-size: small;
+        text-align: right;
+        padding-left: 1em;
+    }
+
+    .list_line_even {
+        background: $secondary-color;
+    }
+
+    .list_line_odd {
+        background: $terciary-color;
+    }
+
+    a {
+        text-decoration: none;
+        color: $primary-color;
+    }
+
+
+
+    a:visited {
+        color: $primary-color;
+        background-color: transparent;
+    }
+
+    a:hover {
+        color: $headliner-color;
+        background-color: transparent;
+    }
+}
+
