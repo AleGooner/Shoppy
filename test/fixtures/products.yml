@@ -1,13 +1,27 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+# A fixture is an environment in which you can run a test. In Rails, a test fixutres is specification
+# of the initial contents of a model (or models) under test. If we want to ensure that our products
+#  table starts off with known data at the start of every unit test, we can specify those contents in a
+# fixture, and Rails will take care of the rest. Each fixture file contains the data for a single model.
+# The name of a fixture is significant; the base name of the file must match the name of a database
+# table. Because we need some data for a Product model, which is stored in the products table, we'll
+# add it to this file. Rails automatically generated this file when we first created the model.
 
 one:
-  title: MyString
-  description: MyText
-  image_url: MyString
-  price: 9.99
+  title:  MyString
+  description:  MyText
+  image_url:  MyString
+  price:  9.99
 
 two:
-  title: MyString
-  description: MyText
-  image_url: MyString
-  price: 9.99
+  title:  MyString
+  description:  MyText
+  image_url:  MyString
+  price:  9.99
+
+monopoly:
+  title:  Monopoly
+  description:  Monopoly is the world famous board game from Hasbro for the whole family.
+  price:  29.90
+  image_url:  monopoly.jpg
+
