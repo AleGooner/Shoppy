@@ -55,8 +55,7 @@ Product.create!(title: 'Parrot AR.Drone',
         The cutting edge EPP design of the AR.Drone 2.0 ensures it has a robust structure. Capture
         amazing footage streamed and recorded directly to your smartphone using the built-in 720p
         HD camera. AR.FreeFlight3© is the primary application used to fly and pilot the AR.Drone. Pilot
-        with or without the accelerometer and switch from the frontal camera to te vertical camera.
-        </p>
+        with or without the accelerometer and switch from the frontal camera to te vertical camera.</p>
         <ul>
             <li> Record pictures, nav data & videos and upload them instantly right from the application. </li>
             <li> New user friendly interface. </li>

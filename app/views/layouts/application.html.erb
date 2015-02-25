@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <title>Shoppy</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
@@ -9,6 +8,23 @@
 </head>
 
 <body class='<%= controller.controller_name %>'>
-<%= yield %>
+    <div id="header">
+        <%= image_tag("geekintoys.jpg") %>
+        <span class="title"><%= @page_title || "Geekin' Toys" %></span>
+    </div>
+    <div id="columns">
+        <div id="side">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Questions</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <span class="time"><%= @time %></span>
+        </div>
+        <div id="main">
+            <%= yield%>
+        </div>
+    </div>
 </body>
 </html>

@@ -11,10 +11,19 @@ class ProductsControllerTest < ActionController::TestCase
     }
   end
 
-  test "should get index" do
+  test "should get products index" do
     get :index
     assert_response :success
+
     assert_not_nil assigns(:products)
+    assert_select 'button', 'New product'
+    assert_select '.list_description', minimum: 3
+    assert_select '.list_description dl dt', 'Monopoly'
+    assert_select '.list_actions' do |elements|
+      elements.each do |element|
+        assert_select element, "a", 3
+      end
+    end
   end
 
   test "should get new" do

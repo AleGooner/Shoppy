@@ -8,20 +8,20 @@
 # add it to this file. Rails automatically generated this file when we first created the model.
 
 one:
-  title:  MyString
-  description:  MyText
-  image_url:  MyString
+  title:  SomeTitle
+  description:  SomeBlurb
+  image_url:  aString
   price:  9.99
 
 two:
-  title:  MyString
-  description:  MyText
-  image_url:  MyString
+  title:  SomeTitle
+  description:  SomeBlurb
+  image_url:  aString
   price:  9.99
 
 monopoly:
   title:  Monopoly
   description:  Monopoly is the world famous board game from Hasbro for the whole family.
-  price:  29.90
+  price:  29.50
   image_url:  monopoly.jpg
 
