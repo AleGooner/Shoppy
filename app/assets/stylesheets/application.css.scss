@@ -1,0 +1,114 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+ /* Start_Highlight */
+
+$font-stack: Helvetica, sans-serif;
+$headliner-color: #ff1493;
+$primary-color: #bebcc0;
+$secondary-color: #b8497f;
+$terciary-color: #4f4887;
+
+body {
+    margin: 0;
+}
+
+/* Reset */
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#header {
+    display: -webkit-flex;
+    display: flex;
+    background: $terciary-color;
+    padding: 10px;
+    border-bottom: 2px solid;
+    font: small-caps 40px/40px $font-stack;
+    color: $headliner-color;
+
+    img {
+        float: none;
+        border-radius: 2px;
+    }
+
+    .title {
+        padding-left: 2em;
+    }
+}
+
+#notice {
+    color: #000 !important;
+    border: 2px solid red;
+    padding: 1em;
+    margin-bottom: 2em;
+    background-color: $primary-color;
+    font: bold smaller sans-serif;
+}
+
+#columns {
+    background: $secondary-color;
+
+    #main {
+        margin-left: 17em;
+        padding: 2em;
+        background: #fff;
+    }
+
+    #side {
+        float: left;
+        padding: 1em 2em;
+        width: 13em;
+
+        ul {
+            padding: 0;
+
+            li {
+                list-style: none;
+                padding: 8px 0 8px 0;
+                text-transform: uppercase;
+
+                a {
+                    color: $primary-color;
+                    text-decoration: none;
+                    font-size: 14px;
+                }
+
+                a:visited {
+                    color: $primary-color;
+                    background-color: transparent;
+                }
+
+                a:hover {
+                    color: $headliner-color;
+                    background-color: transparent;
+                }
+            }
+        }
+
+        .time {
+            color: $headliner-color;
+            padding: 2px;
+            background: #FFF;
+            font-size: 12px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+        }
+    }
+}
+/* End_Highlight */

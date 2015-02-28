@@ -1,0 +1,55 @@
+// Place all the styles related to the Store controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$font-stack: Helvetica, sans-serif;
+$headliner-color: #ff1493;
+$primary-color: #bebcc0;
+$secondary-color: #b8497f;
+$terciary-color: #4f4887;
+
+.store {
+    h1 {
+        margin: 0;
+        padding-bottom: 0.5em;
+        font: $font-stack;
+        color: $headliner-color;
+        border-bottom: 3px solid $terciary-color;
+    }
+
+    /* An entry in the Store Catalog */
+    .entry {
+        overflow: auto;
+        margin-top: 1em;
+        margin-right:  1em;
+        border-bottom: 1px dotted $terciary-color;
+        min-height: 100px;
+
+        img {
+            width: 80px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            position: absolute;
+        }
+
+        h3 {
+            font-size: 120%;
+            font-family: $font-stack;
+            margin-left: 100px;
+            margin-top: 0;
+            margin-bottom: 2px;
+            color: $headliner-color;
+        }
+
+        p, li, div.price_line {
+            margin-left: 100px;
+            margin-top: 0.5em;
+            margin-bottom: 0.8em;
+        }
+
+        .price {
+            color: $terciary-color;
+            font-weight: bold;
+            margin-right: 3em;
+        }
+    }
+}
